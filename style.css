@@ -1,0 +1,45 @@
+.container
+{
+  border-top-left-radius:50px;
+  border-top-right-radius:50px;
+  border-bottom-left-radius:50px;
+  border-bottom-right-radius:50px;
+  border:1px solid black;
+  width:100px;
+  margin-left:10%;
+}
+div#bat{
+   margin-top:190px;
+   height:5px;
+   background-color:green;
+   width:50px;
+   margin-left:24%;
+   border-radius:100px;
+  
+}
+#bounce{
+  top:80px;
+  position:absolute;
+  height:100px;
+  width:100px;
+  border-radius:100px;
+  background-color:red;
+  animation:jump 2s linear infinite;
+}
+@keyframes jump{
+  0%{
+    top:4px;
+  }
+  10%{
+    top:10px;
+    
+  }
+  75%{
+    top:100px;
+    box-shadow: 10px 30px 45px #888888;
+    z-index:-1;
+  }
+  100%{
+    top:0px;
+  }
+}
